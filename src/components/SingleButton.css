@@ -1,0 +1,46 @@
+@keyframes buttonPressedAnimation {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -210px; /* Assuming the sprite sheet contains frames placed horizontally */
+  }
+}
+
+@keyframes buttonReleasedAnimation {
+  from {
+    background-position: -210px;
+  }
+  to {
+    background-position: -420px; /* Assuming the sprite sheet contains frames placed horizontally */
+  }
+}
+
+.sprite-button {
+  width: 25vw; /* 20% of the viewport width */
+  height: auto; /* Maintain aspect ratio */
+  padding: 0; /* Remove padding */
+  background-color: transparent; /* Remove default background color */
+  border: none; /* Remove border */
+  display: flex; /* Use flexbox to center the SVG */
+  justify-content: center; /* Center horizontally */
+}
+
+.sprite-arrow-left {
+  /* do nothing */
+} 
+
+.sprite-arrow-right {
+  /* rotate the SVG 180 degrees */
+  transform: rotate(180deg);
+}   
+
+.sprite-arrow-up {
+  /* rotate the SVG 90 degrees */
+  transform: rotate(90deg);
+}
+
+.sprite-arrow-down {
+  /* rotate the SVG -90 degrees */
+  transform: rotate(-90deg);
+}

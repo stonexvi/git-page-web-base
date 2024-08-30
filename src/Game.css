@@ -1,0 +1,24 @@
+.playing-as {
+  margin: 5px;
+  font-size: 35px;
+}
+
+.character-id {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
